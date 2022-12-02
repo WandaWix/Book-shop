@@ -1,0 +1,370 @@
+*{
+    margin: 0 auto;
+    
+}
+
+h2 {
+    
+}
+.wrapper {
+    width: 1600px;
+    margin: 0 auto;
+
+}
+
+nav {
+    display: flex;
+    background-color: black;
+}
+ul {
+    text-decoration: none;
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    justify-content: space-around;
+    width: 500px;
+}
+
+li {
+    margin-left: 44px;
+    padding: 0px 37px;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+main {
+    height: 100px;
+    background-color: black;
+}
+
+#sectionOne {
+  /*  gap: 80px; */
+    padding: 272px 1px;
+    color: black;
+    height: 1345px;
+    width: 95%;
+    /* margin: 0px auto; */
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    gap: 5px 11px;
+}
+
+.line-img{
+    position: absolute;
+    top: 300px;
+    width: 1200px;
+    height: 50px;
+}
+.books {
+    width: 58px;
+    
+}
+
+#books {
+    border: 6px solid rgb(31 140 171);
+    padding: 64px 38px;
+    border-radius: 11px;
+    /* background-color: rgb(234,246,242); */
+    background-color: #d4dade;
+}
+#title {
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding: 31px;
+    margin-right: 1%;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* @media(max-width: 768px){ */
+    .hamburger{
+        display: block;
+        background-color: black;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+
+    }
+
+    ul{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: black;
+
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        right: -2700px;
+        top: 10px;
+    }
+/* } */
+
+
+
+
+
+
+
+
+
+
+/* .shop {
+    display: none;
+    cursor: pointer;
+} */
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+/* @media(max-width: 768px){ */
+     .shop{
+        display: block;
+        background-color: black;
+        margin: auto 10px;
+        width: 76px;
+    display: flex;
+    height: 86px;
+
+    }
+
+    .shop.active .bar:nth-child(5){
+        opacity: 0;
+    }
+
+    .shop.active .bar:nth-child(4){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .shop.active .bar:nth-child(6){
+        transform: translateY(-8px) rotate(-45deg);
+
+
+    }
+
+    ul{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 30%;
+        text-align: center;
+        transition: 0.3s;
+        background-color: black;
+
+    }
+
+    .shop-item {
+        margin: 16px 0;
+    }
+
+    .shop-menu:active {
+        left: 0px;
+        position: absolute;
+        width: 1016px;
+        height: 1000px;
+        background-color: wheat;
+        left: auto;
+        right: auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+/* } */
+
+
+.showMore {
+    display: block;
+    font-family: 'Italiana', serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    height: 48px;
+    width: 221px;
+    background-color: rgb(101, 206, 255);
+    border-radius: 8px;
+    margin: 34px -3px;
+}
+
+.showMore.active {
+   left: 0px;
+    position: absolute;
+    width: 616px;
+    height: 676px;
+    background-color: wheat;
+    left: auto;
+    right: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.showMore.active .bar:nth-child(8){
+    opacity: 0;
+}
+
+.showMore.active .bar:nth-child(7){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.showMore.active .bar:nth-child(9){
+    transform: translateY(-8px) rotate(-45deg);
+
+
+}
+
+.show-item {
+    margin: 16px 0;
+}
+
+.show-menu.active {
+    left: 500;
+    top: 10px;
+} 
+
+/* my-price--------------------------------- */
+
+.my-price{
+    color: rgb(45 200 25);
+    font-size: 21px;
+    margin-right: 0;
+}
+
+.buy_button {
+ 
+
+    background-color: yellow;
+    height: 42px;
+    /* padding: 18px; */
+    position: relative;
+    top: -54px;
+    right: 65px;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 auto;
+    /* width: 10px;*/
+}
+
+.shop pre {
+    font-size: 20px;
+    color: yellow;
+}
+
+
+
+.shop-menu.active {
+    left: 0px;
+    position: absolute;
+    width: 1016px;
+    height: 1000px;
+    background-color: #cccac1;
+    left: auto;
+    right: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 0;
+} 
+
+.th-1 {
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(50, 62, 68);
+    font-size: 50px;
+    color:rgb(50, 62, 68);
+    left: 0;
+    opacity: 1;
+}
+
+
+.th-2   { 
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(50, 62, 68);
+    font-size: 50px;
+    color:rgb(50, 62, 68);
+    left: 0;
+    opacity: 1;
+}
+.th-3 {
+    width: 300px;
+    height: 100px;
+    border: 3px solid rgb(50, 62, 68);
+    font-size: 50px;
+    color:rgb(50, 62, 68)
+}
+
+.td-1 {
+    height: 500px;
+    border: 3px solid rgb(50, 62, 68);
+
+}
+.td-2 {
+    height: 500px;
+    border: 3px solid rgb(50, 62, 68);
+
+}
+.td-3 {
+    height: 500px;
+    border: 3px solid rgb(50, 62, 68);
+
+}
+
+
+.order_button {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 0;
+}
